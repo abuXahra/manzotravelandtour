@@ -1,0 +1,93 @@
+.sign-section {
+    background-color: #0d398463;
+}
+
+
+.sign-wraper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sign-content {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 50px 30px;
+    font-size: 15px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.sign-fields {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.sign-fields input {
+    border: none;
+    background-color: #0d398423;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+
+.sign-fields input:focus {
+    border: 2px solid #0D3984;
+    outline: none;
+}
+
+.sign-chekbox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.sign-chekbox div {
+
+    display: flex;
+    gap: 20px;
+}
+
+.sumbit-button {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 13px 40px;
+    font-size: 14px;
+    margin-top: 10px;
+
+}
+
+
+.sign-content a {
+    text-decoration: none;
+}
+
+
+/* signup */
+.sign-name {
+    display: flex;
+    width: 100%;
+    gap: 10px
+}
+
+@media (max-width:768px) {
+    .sign-content {
+        width: 95%;
+    }
+
+}

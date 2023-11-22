@@ -1,0 +1,116 @@
+/* Flight search for background */
+.hotel-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.hotel-section-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #0d3984dc;
+}
+
+.hotel-search-container {
+    width: 100%;
+    height: auto;
+    padding: 40px
+}
+
+
+.hotel-departure-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.hotel-departure {
+    display: flex;
+    width: 29%;
+    background-color: #FF6805;
+    padding-left: 10px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.hotel-departure-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 5px 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.hotel-departure-content label {
+    color: grey;
+    font-size: 12px;
+}
+
+
+.hotel-departure-content input {
+    border: none;
+}
+
+.hotel-departure-content input:focus {
+    outline: none;
+}
+
+
+.hotel-departure-content input::placeholder {
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+.hotel-departure-content input[type="date"]::-webkit-calendar-picker-indicator {
+    display: flex;
+}
+
+
+
+.hotel-dates {
+    display: flex;
+    gap: 20px;
+}
+
+
+@media (max-width:768px) {
+    .hotel-section {
+        border-radius: 0px;
+    }
+
+    .hotel-section-inner {
+        border-radius: 0px;
+    }
+
+
+    .hotel-search-container {
+        padding: 40px;
+        border-radius: 0px;
+    }
+
+    .hotel-departure-container {
+        flex-direction: column;
+
+    }
+
+    .hotel-departure {
+        display: flex;
+        width: 100%;
+        background-color: #FF6805;
+        padding-left: 10px;
+        border-radius: 10px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hotel-departure-content {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,243 @@
+/* flit-page */
+
+/* Flight search for background */
+.transfer-section {
+    width: 100%;
+    background-image: url('../images/cab.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    border-radius: 0 0 0 50px;
+    position: relative;
+}
+
+
+
+
+.transfer-section-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #0d398482;
+    border-radius: 0 0 0 50px;
+}
+
+/* b */
+
+.flight {
+    background-color: transparent !important;
+}
+
+.flight-bed {
+    background-color: transparent !important;
+}
+
+.flight-visa {
+    background-color: transparent !important;
+}
+
+
+.transfer-search-container {
+    width: 100%;
+    background-color: #0d3984dc;
+    border-radius: 30px;
+    height: auto;
+    padding: 40px
+}
+
+.car-from {
+    background-color: #0d3984dc !important;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+    padding: 13px 40px;
+}
+
+
+.car-to {
+    background-color: transparent !important;
+}
+
+.car-from2 {
+    background-color: transparent !important;
+}
+
+.car-to2 {
+    background-color: #0d3984dc !important;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+    padding: 13px 40px
+}
+
+.dropdown-row {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+
+.btn-dropdown-container {
+    background-color: #FF6805 !important;
+    border-radius: 10px;
+    width: auto;
+
+}
+
+
+.btn-dropdown {
+    background-color: #fff !important;
+    color: #0D3984 !important;
+    border-radius: 10px;
+    border: none;
+    margin-left: 8px;
+    padding: 10.9px;
+}
+
+
+
+.btn-dropdown:focus {
+    outline: none;
+}
+
+.btn-dropdown-passangers {
+    background-color: #fff !important;
+    color: #0D3984 !important;
+    border-radius: 10px;
+    border: none;
+    margin-left: 8px;
+    padding: 10px;
+    height: 100%;
+}
+
+
+
+.transfer-departure-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+
+    font-size: 14px;
+}
+
+
+.transfer-from {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.transfer-departure {
+    display: flex;
+    background-color: #FF6805;
+    width: 50%;
+    padding-left: 10px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.transfer-departure-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.pickup-date-time-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+
+}
+
+.pick-date {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pickup-time-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 1px solid #D4D4D4;
+    padding-left: 10px;
+}
+
+.pickup-time {
+    display: flex;
+    flex-direction: column;
+}
+
+.transfer-departure-content label {
+    color: grey;
+    font-size: 12px;
+}
+
+
+.transfer-departure-content input {
+    border: none;
+}
+
+.flight-departure-content input:focus {
+    outline: none;
+}
+
+
+.transfer-departure-content input::placeholder {
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+.transfer-departure-content input[type="date"]::-webkit-calendar-picker-indicator {
+    display: flex;
+}
+
+
+
+.fligt-dates {
+    display: flex;
+    gap: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+
+    /* Flight search for background */
+    .transfer-section {
+        border-radius: 0px;
+    }
+
+
+    .transfer-section-inner {
+        border-radius: 0px;
+    }
+
+    .transfer-search-container {
+
+        border-radius: 0px;
+
+    }
+
+    .transfer-from {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .transfer-departure {
+        width: 100%;
+    }
+
+
+    .pickup-time-wrapper {
+        gap: 0px;
+        padding-left: 2px;
+    }
+}

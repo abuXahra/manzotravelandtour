@@ -1,0 +1,111 @@
+/* Visa for background */
+.visa-section {
+    width: 100%;
+    /* background-color: #0D3984; */
+    background-image: url('../images/travel.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    border-radius: 0 0 0 50px;
+    position: relative;
+}
+
+
+
+.visa-section-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #0d398482;
+    border-radius: 0 0 0 50px;
+}
+
+/* b */
+
+.visa-hotel {
+    background-color: transparent !important;
+
+}
+
+.visa-bed {
+    background-color: transparent !important;
+}
+
+.visa {
+
+    background-color: #0d3984dc !important;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+    padding: 13px 40px;
+}
+
+
+.visa-search-container {
+    width: 100%;
+    background-color: #0d3984dc;
+    border-radius: 0px 30px 0px 30px;
+    height: auto;
+    padding: 40px
+}
+
+
+.visa-departure-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+}
+
+.visa-departure {
+    display: flex;
+    background-color: #FF6805;
+    width: 50%;
+    padding-left: 10px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.visa-departure {
+    text-decoration: none;
+}
+
+.visa-departure-content {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    background-color: #FFF;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    height: 100%;
+}
+
+
+/* ============media query */
+
+@media (max-width:768px) {
+
+    .visa-section {
+        border-radius: 0;
+    }
+
+    .visa-search-container {
+        width: 100%;
+        background-color: #0d3984dc;
+        border-radius: 0px;
+        height: auto;
+        padding: 20px
+    }
+
+    .visa-departure-container {
+        flex-direction: column;
+    }
+
+    .visa-departure {
+        width: 100%;
+    }
+}

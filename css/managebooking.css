@@ -1,0 +1,89 @@
+.managebooking {
+    background-color: #0d398463;
+}
+
+
+.managebooking-wraper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.managbookin-content {
+    background-color: white;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 33.3%;
+    font-size: 14px;
+    position: relative;
+}
+
+.managebooking-icon {
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+    background-color: #0d398423;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.managebooking-icon img {
+    width: 40px;
+}
+
+.choose-button {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 10px 20px;
+    background-color: red;
+}
+
+
+.manage-ticket-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+
+.manage-ticket-input input {
+    border: none;
+    background-color: #0d398423;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.manage-ticket-input input:focus {
+    border: 2px solid #0D3984;
+    outline: none;
+}
+
+
+
+
+@media (max-width:768px) {
+
+    .managebooking-wraper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .managbookin-content {
+        width: 95%;
+    }
+
+}

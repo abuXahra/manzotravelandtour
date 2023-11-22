@@ -1,0 +1,182 @@
+/* flit-page */
+
+/* flight-search search for background */
+.fligt-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+
+
+.flight-search-section-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #0D3984;
+}
+
+
+
+
+.flight-search-search-container {
+    width: 100%;
+    background-color: #0d3984dc;
+    border-radius: 0px 30px 30px 30px;
+    height: auto;
+    padding: 40px
+}
+
+
+.flight-search-dropdown-row {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+
+.btn-dropdown-container {
+    background-color: #FF6805 !important;
+    border-radius: 10px;
+    width: auto;
+
+}
+
+
+.btn-dropdown {
+    background-color: #fff !important;
+    color: #0D3984 !important;
+    border-radius: 10px;
+    border: none;
+    margin-left: 8px;
+    padding: 10.9px;
+}
+
+
+
+.btn-dropdown:focus {
+    outline: none;
+}
+
+.btn-dropdown-passangers {
+    background-color: #fff !important;
+    color: #0D3984 !important;
+    border-radius: 10px;
+    border: none;
+    margin-left: 8px;
+    padding: 10px;
+    height: 100%;
+}
+
+
+
+.flight-search-departure-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+
+.flight-search-departure {
+    display: flex;
+    background-color: #FF6805;
+    padding-left: 10px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.flight-search-departure-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 5px 10px;
+    height: 100%;
+}
+
+.flight-search-departure-content label {
+    color: grey;
+    font-size: 12px;
+}
+
+
+.flight-search-departure-content input {
+    border: none;
+}
+
+.flight-search-departure-content input:focus {
+    outline: none;
+}
+
+
+.flight-search-departure-content input::placeholder {
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+.flight-search-departure-content input[type="date"]::-webkit-calendar-picker-indicator {
+    display: flex;
+}
+
+
+.flight-search-dates {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+
+    .flight-search-search-container {
+        padding: 20px;
+    }
+
+    .flight-search-section {
+        border-radius: 0px;
+    }
+
+
+    .flight-search-section-inner {
+        border-radius: 0px;
+    }
+
+    .flight-search {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .flight-search-search-container {
+        border-radius: 0px 10px 10px 10px;
+    }
+
+    .flight-search-dropdown-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
+    .flight-search-departure-container {
+        flex-direction: column;
+    }
+
+    .flight-search-departure-content {
+        width: 100%;
+    }
+
+    .flight-search-dates {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+}
