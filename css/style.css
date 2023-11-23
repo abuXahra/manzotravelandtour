@@ -216,6 +216,49 @@ h3 {
     gap: 10px;
 }
 
+.flight-departure-date {
+    display: flex;
+    background-color: #FF6805;
+    padding-left: 10px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.flight-departure-date-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 5px 10px;
+    height: 100%;
+}
+
+.flight-departure-date-content label {
+    color: grey;
+    font-size: 12px;
+}
+
+
+.flight-departure-date-content input {
+    border: none;
+}
+
+.flight-departure-date-content input:focus {
+    outline: none;
+}
+
+
+.flight-departure-date-content input::placeholder {
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+.flight-departure-date-content input[type="date"]::-webkit-calendar-picker-indicator {
+    display: flex;
+}
 
 /* packages */
 .package-wrapper {
@@ -484,7 +527,7 @@ h3 {
 
 /* ============media query */
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     .navbar {
         width: 100% !important;
         background-color: #fff !important;
@@ -536,7 +579,7 @@ h3 {
 
     .dropdown-row {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         width: 100%;
     }
 
@@ -545,6 +588,7 @@ h3 {
     .flight-departure-container {
         flex-direction: column;
     }
+
 
     .flight-departure-content {
         width: 100%;
@@ -555,6 +599,13 @@ h3 {
         justify-content: space-between;
     }
 
+    .flight-departure-date {
+        width: 50%;
+    }
+
+    .flight-departure-date-content {
+        width: 100%;
+    }
 
     .package-wrapper {
         display: flex;
