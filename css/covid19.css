@@ -1,0 +1,124 @@
+.covid19-box {
+    background-color: #EAF0F3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.covid19-need {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #FF6805
+}
+
+.covid19-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+
+
+.covid19-wrapper2 {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.covid19-content {
+    width: 27.3%;
+    border-top: 2px solid #FF6805;
+    border-bottom: 2px solid #FF6805;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.covid19-contents {
+    width: 31.5%;
+    border-bottom: 2px solid #FF6805;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    font-size: 15px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.covid19-contents ul {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.covid19-contents ul li:before {
+    content: '✓';
+    color: #FF6805;
+    margin-right: 10px;
+}
+
+.covid19-content h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.covid19-content p {
+    color: gray;
+}
+
+.covid19-content a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.covid19-content a:hover {
+    text-decoration: underline;
+}
+
+.covid19-content2 {
+    width: 10%;
+    padding: 40px;
+}
+
+
+
+
+@media (max-width:786px) {
+
+    .covid19-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .covid19-content {
+        width: 80%;
+    }
+
+
+    .covid19-wrapper2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .covid19-contents {
+        width: 90%;
+    }
+}
