@@ -17,7 +17,7 @@
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    margin-left: 10%;
+    padding-left: 10%;
 }
 
 
@@ -55,6 +55,7 @@
 }
 
 
+
 .covid19-contents ul {
     list-style: none;
     padding-left: 0px;
@@ -66,6 +67,18 @@
 
 .covid19-contents ul li:before {
     content: '✓';
+    color: #FF6805;
+    margin-right: 10px;
+}
+
+
+.covid19-contents ul li ul {
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+.covid19-contents>ul>li>ul>li:before {
+    content: '-';
     color: #FF6805;
     margin-right: 10px;
 }
@@ -95,6 +108,59 @@
 }
 
 
+.covid19-contentss {
+    width: 100%;
+    border-bottom: 2px solid #FF6805;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    font-size: 15px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+}
+
+.covid19-contentss ul {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.covid19-contentss ul li:before {
+    content: '✓';
+    color: #FF6805;
+    margin-right: 10px;
+}
+
+
+.covid19-contentss ul li ul {
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+.covid19-contentss>ul>li>ul>li:before {
+    content: '-';
+    color: #FF6805;
+    margin-right: 10px;
+}
+
+.faq-section {
+    background-color: white;
+}
+
+.faq-content {
+    width: 100%;
+    background-color: white;
+    padding: 50px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
 
 
 @media (max-width:786px) {
@@ -103,7 +169,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 0;
+        padding-left: 0;
     }
 
     .covid19-content {
@@ -120,5 +186,9 @@
 
     .covid19-contents {
         width: 90%;
+    }
+
+    .faq-content {
+        padding: 20px;
     }
 }
