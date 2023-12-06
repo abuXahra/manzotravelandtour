@@ -1,0 +1,173 @@
+.support-section {
+    background-color: #0D3984;
+}
+
+
+.support-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #F3F5F7;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.support-ticket {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.support-search {
+    display: flex;
+    width: 100%;
+    gap: 10px
+}
+
+.support-search input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #d4d3d3;
+    border-radius: 5px;
+}
+
+
+.support-search input:focus {
+    outline: 1px solid #FF6805;
+}
+
+
+.ticket-container {
+    display: flex;
+    gap: 40px;
+}
+
+.ticket {
+    display: flex;
+    gap: 10px;
+}
+
+.ticket a {
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+.ticket a:hover {
+    color: blue;
+    text-decoration: underline;
+
+}
+
+.ticket button {
+    border: none;
+    background-color: #6F7C87;
+    color: white;
+}
+
+
+.support-knowledge-base-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F5F7;
+    border-radius: 5px;
+}
+
+.support-knowledg-base {
+    width: 70%;
+    background-color: #FFFFFF;
+    border-right: 1px solid #d4d3d3;
+    margin-left: -20px;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.knowledge-base-header {
+    border-bottom: 1px solid #FF6805;
+    color: #6F7C87;
+    margin: 20px 0;
+}
+
+
+.knowledge-base-content {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+}
+
+
+.knowledge-base-content-item-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.knowledge-base-content-items {
+    display: flex;
+    gap: 5px;
+}
+
+.knowledge-base-content-items img {
+    width: 15px;
+    height: 15px;
+}
+
+.knowledge-base-content-items a {
+    text-decoration: none;
+    color: #6F7C87;
+    font-size: 13px;
+}
+
+
+.knowledge-base-content-items a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+@media (max-width:786px) {
+    .support-wrapper {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+
+    .support-search {
+        width: 100%;
+    }
+
+    .support-search input {
+        flex: 20;
+    }
+
+    .support-search button {
+        flex: 1;
+    }
+
+    .support-search button img {
+        width: 15px;
+    }
+
+    .support-knowledge-base-wrapper {
+        background-color: white;
+
+    }
+
+    .support-knowledg-base {
+        width: 100%;
+        border: none;
+    }
+
+    .knowledge-base-content {
+        flex-direction: column;
+    }
+
+    .knowledge-base-content-item-wrapper {
+        width: 100%;
+    }
+}

@@ -1,0 +1,213 @@
+.point-section {
+    background-color: #EAF0F3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.point-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+
+}
+
+.point-wrapper h1 {
+    font-weight: bold;
+}
+
+.point-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 50px;
+
+}
+
+
+.point-content div {
+    display: flex;
+}
+
+
+.point-content div span {
+    display: flex;
+    border-radius: 10px;
+    padding: 10px 5px;
+    color: white;
+    font-weight: 500;
+}
+
+.how-btn {
+    background-color: rgb(44, 43, 43) !important;
+}
+
+.point-form {
+    width: 40%;
+
+}
+
+
+
+.point-form form {
+    font-size: 13px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: rgb(91, 90, 90);
+
+}
+
+.input-wrapper div {
+    display: flex;
+    gap: 10px;
+}
+
+
+.input-wrapper div span {
+    height: 20px;
+    align-items: center;
+    color: rgb(91, 90, 90);
+    display: flex;
+    gap: 5px
+}
+
+
+.input-wrapper span {
+    color: red;
+}
+
+.input-wrapper input {
+    border-radius: 5px;
+    border: 1px solid rgba(135, 145, 235, 0.495);
+    padding: 10px;
+}
+
+
+.input-wrapper input:focus {
+    outline: none;
+}
+
+
+.point-form-info {
+    gap: 15px;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    background-color: #CFE2FF;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #a4c7fb;
+}
+
+
+
+/* ==============check balance content css============== */
+.input-redem-pins {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.input-redem-pins input {
+    width: 45px;
+}
+
+
+
+/*============= how it works css =============*/
+
+.point-howit-works {
+    width: 70%;
+    background-color: white;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: white;
+    color: rgb(73, 72, 72);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-weight: 400;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: none;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+.point-howit-works .accordion:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.point-howit-works .active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+@media (max-width: 786px) {
+    .point-wrapper {
+        flex-direction: column;
+    }
+
+    .point-content div {
+        flex-direction: column;
+    }
+
+    .point-content {
+        width: 100%;
+    }
+
+
+    .point-content div span {
+        padding: 0x;
+    }
+
+    .point-form {
+        width: 100%;
+
+    }
+
+
+    .point-howit-works {
+        width: 100%;
+    }
+}
