@@ -13,6 +13,13 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 
+
+        <link rel = "stylesheet" href = "https://codepen.io/gymratpacks/pen/VKzBEp#0">  
+        <link href = 'https://fonts.googleapis.com/css?family=Nunito:400,300' rel = 'stylesheet' type = 'text/css'>  
+<link rel = "stylesheet"  
+        href =  
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -71,11 +78,12 @@
                 </ul>
                 <div class="d-flex sign-in-up" role="search">
                     <a class="btn signin" type="submit" href="signin.html">Sign In</a>
-                    <a class="btn signup" type="submit" href="signup.html">Sign In</a>
+                    <a class="btn signup" type="submit" href="signup.html">Create Account</a>
                 </div>
             </div>
         </div>
     </nav>
+
 
     <!-- flight booking section -->
     <section class="fligt-section">
@@ -99,84 +107,159 @@
                 <div class="flight-search-container">
 
                     <form action="">
-                        <div class="dropdown-row">
+                        <!-- <div class="dropdown-row"> -->
+                            <!-- flight type: round trip, One-way, Multicity -->
+                            <div class="flight-type-wrapper">
+                                <span>
+                                    <input type="checkbox" name="Round Trip" id="round-trip"> 
+                                    <label for="round-trip">Round Trip</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="One Way" id="one-way"> 
+                                    <label for="round-trip">One Way</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="Multi-city" id="multi-city"> 
+                                    <label for="round-trip">Multi-city</label>
+                                </span>
+
+                            </div>
+                            <!-- flight input wrapper -->
+                            <div class="flight-wrapper">
+                                <div class="flight-input-wrapper">
+                                    <input type="text" placeholder="From" />
+                                    <i class="fa fa-car fa-flight-iconstyle
+                                    "></i>
+                                </div>                                
+                                <span class="fa-flight-iconstyle2"><i class="fa fa-car "></i></span>
+                                <div class="flight-input-wrapper">
+                                    <input type="text" placeholder="To" />
+                                    <i class="fa fa-car fa-flight-iconstyle"></i>
+                                </div>
+                            <!-- </div> -->
                             <!-- trip round -->
-                            <div class="btn-dropdown-container">
+                            <!-- <div class="btn-dropdown-container">
                                 <select class="btn-dropdown">
                                     <option value="Lorem Ipsum">Round Trip</option>
                                     <option value="Adipiscing">One-way</option>
                                     <option value="Lorem Ipsum">Multi-city</option>
                                 </select>
-                            </div>
-                            <!-- number of passenger -->
-                            <div class="btn-dropdown-container">
-                                <div class="dropdown ">
-                                    <button class="btn btn-dropdown-passangers btn-secondary dropdown-toggle"
-                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Person
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Adult</a></li>
-                                        <li><a class="dropdown-item" href="#">Children</a></li>
-                                        <li><a class="dropdown-item" href="#">Infants</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- trip class -->
-                            <div class="btn-dropdown-container">
-                                <select class="btn-dropdown">
-                                    <option value="Lorem Ipsum">Economy</option>
-                                    <option value="Lorem Ipsum">Business</option>
-                                    <option value="Lorem Ipsum">First Class</option>
-                                </select>
-                            </div>
+                            </div> -->
                         </div>
-                        <!-- Depature and destination container -->
-                        <div class="flight-departure-container my-3">
-                            <!-- From where? -->
-                            <div class="flight-departure">
-                                <img src="images//departure.png" width="15" alt="" srcset="">
-                                <div class="flight-departure-content">
-                                    <label>From where?</label>
-                                    <input type="text" placeholder="South Africa" />
-                                </div>
-                            </div>
-                            <!-- To where? -->
-                            <div class="flight-departure">
-                                <img src="images/departure.png" width="15" alt="" srcset="">
-                                <div class="flight-departure-content">
-                                    <label>To where?</label>
-                                    <input type="text" placeholder="Saudi Arabia" />
-                                </div>
-                            </div>
 
-                            <!-- Departure Date -->
-
-                            <div class="flight-departure">
-                                <img src="images/calendar.png" width="15" alt="" srcset="">
-                                <div class="flight-departure-date-content">
-                                    <label for="depart">Depart</label>
+                          <!-- Depature and destination container -->
+                        <div class="flight-depart-wrapper">
+                            <div id="departing" class="flight-depat-wrap-content">
+                                    <label for="depart">Departing</label>
                                     <input type="date" id="depart" />
-                                </div>
                             </div>
 
-                            <!-- Arrival Date -->
-                            <div class="flight-departure">
-                                <img src="images/calendar.png" width="15" alt="" srcset="">
-                                <div class="flight-departure-date-content">
-                                    <label for="return">Return</label>
-                                    <input type="date" />
+                            <div id="returning" class="flight-depat-wrap-content">
+                                <label for="depart">Returning</label>
+                                <input type="date" id="depart" />
+                            </div>
+                            <div  id="passegersAndClass" class="flight-depat-wrap-content">
+                                <span id="pass-class">Passenger and Class</span>
+                                <div class="passenger-wrapper">
+                                    <strong>1 Passenger and Guest Class</strong>
                                 </div>
                             </div>
-
-                            <a href="flight_search_result.html" class="btn" type="submit"><img src="images/search.png"
-                                    width="15" alt="" srcset="">
-                                Search</a>
                         </div>
-                    </form>
 
-                    <div class="dropdown-row">
-                    </div>
+
+                        <!-- passengers -->
+                        <div id="passenger" onclick="toggleBorderStyle()" class="flight-depat-passanegers">
+                            <span>Passengers</span>
+
+                            <!-- number of adults -->
+                            <div class="passenger-content-wrapper">
+                                <div class="passenter-title">
+                                    <strong>Adults</strong>
+                                    <span>12 Years and up</span>
+                                </div>
+                                <div class="addandremove-button-wrapper">
+                                    <button>-</button>
+                                    <span>1</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+
+                            
+                            <!-- number of children -->
+                            <div class="passenger-content-wrapper">
+                                <div class="passenter-title">
+                                    <strong>Children</strong>
+                                    <span>Ages 2-11</span>
+                                </div>
+                                <div class="addandremove-button-wrapper">
+                                    <button>-</button>
+                                    <span>0</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+
+                             <!-- number of Infants -->
+                            <div class="passenger-content-wrapper">
+                                <div class="passenter-title">
+                                    <strong>Infants</strong>
+                                    <span>Below 2 years</span>
+                                </div>
+                                <div class="addandremove-button-wrapper">
+                                    <button>-</button>
+                                    <span>0</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+
+                             <!-- number of Infants on seat-->
+                             <div class="passenger-content-wrapper">
+                                <div class="passenter-title">
+                                    <strong>Infant on seat</strong>
+                                    <span>Below 2 years</span>
+                                </div>
+                                <div class="addandremove-button-wrapper">
+                                    <button>-</button>
+                                    <span>0</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+
+                            <div class="flight-class-wrapper">
+                                <span>Class</span>
+
+                                <!-- Guest -->
+                            <div class="flight-class">
+                              <label for="guest"><strong>Guest</strong></label>
+                                <input type="checkbox" name="guest" id="">
+                            </div>
+
+                            <!-- Business -->
+                            <div class="flight-class">
+                              <label for="guest"><strong>Business</strong></label>
+                                <input type="checkbox" name="guest" id="">
+                            </div>
+
+                            <!-- First class -->
+                            <div class="flight-class">
+                              <label for="guest"><strong>First Class</strong></label>
+                                <input type="checkbox" name="guest" id="">
+                            </div>
+                            </div>
+
+                         
+                                <button class="btn" onclick="continueFunc()" type="submit">
+                                    <span>Continue</span>
+                                </button>
+                           
+                        </div>     
+
+                      <div style="width: 300px; display:flex; gap: 20px; align-self: flex-end; justify-content: end;">
+                        <button  style=" font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold; display:flex; gap: 20px; justify-content: center; align-items: center;padding: 20px;"  class="btn" type="submit">
+                            <span>Search Flights</span>
+                        <i class="fa fa-search"></i>
+                        </button>
+                        </div>  
+                    </form>
                 </div>
     </section>
 
@@ -562,7 +645,7 @@
 
 
 
-
+    <script src="./js/script.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -588,7 +671,6 @@
             }
         })
     </script>
-</body>
-</body>
 
+</body>
 </html>
