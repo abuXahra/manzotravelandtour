@@ -414,7 +414,7 @@ display: inline-block;
 
 /* number of passenger style =========================================================================================== */
 .flight-depat-passanegers{
-    width: 25%;
+    width: 25.3%;
     display:none;
     flex-direction: column;
     align-self: flex-end;
