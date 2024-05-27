@@ -250,7 +250,7 @@ font-size: 50px
 
 /*flight type style  */
 .flight-type-wrapper{
- display: flex;
+ display: none;
  width: 100%;
  gap: 30px;
  color: rgb(72, 72, 72);
@@ -258,9 +258,15 @@ font-size: 50px
 
 .flight-type-wrapper span{
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
+.flight-type-wrapper span a{
+    color: rgb(72, 72, 72);
+    margin-left: 10px;
+    text-decoration: none;
+}
 
 
 .flight-wrapper{
@@ -274,10 +280,13 @@ font-size: 50px
 width: 49%;
 position: relative;
 display: inline-block;
+border-radius: 10px;
 }
 
 
-
+.round-trip{
+    height:30px !important; 
+    width:30px !important;}
 
 .fa-flight-iconstyle{
     font-size:20px;
@@ -321,9 +330,14 @@ display: inline-block;
         width: 100%;
     }
     
+    .round-trip{
+      display: none !important;}
+
+
 .flight-depart-wrapper{
     flex-direction: column;
     width:100%;
+    display: flex;
 }
 .flight-depat-wrap-content{
     width: 100% !important;
@@ -362,15 +376,23 @@ display: inline-block;
     box-shadow: none !important;
     z-index: 2;
 }
+.flight-type-wrapper{
+    display: flex;
+}
+
+.flight-btn-wrapper{
+    display: flex;
+}
 
 }
+
 
 /* =================================================================== */
 
 /* ======================================================================== */
 .flight-depart-wrapper{
     width: 100%;
-    display: flex;
+    display: none;
     gap: 20px;
 }
 
@@ -467,9 +489,15 @@ display: inline-block;
 }
 
 
+.flight-btn-wrapper{
+    width: 300px; display:none; gap: 20px; align-self: flex-end; justify-content: end;
+    border-radius: 10px;
+}
+
 /* start javascrit toggle */
 .bordered {
     border: 2px solid #0D3984;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 0px 15px -3px #0D3984;
 }
 
 .hidden {
@@ -488,11 +516,12 @@ display: inline-block;
 
 
 
-.addandremove-button-wrapper {display: flex; gap: 10px;align-items: center;
+.addandremove-button-wrapper {display: flex; gap: 10px;align-items: center; height: 20px;
 }
 
 .addandremove-button-wrapper button{
-    border-radius: 50%; font-size: 20px; height: 30px; width: 30px; border: none; background-color: black; color: white;
+    font-size: 20px; padding: 0px 10px; border: none; background-color: #FF6805; color: white;
+    border-radius: 5px;
 }
 
 .addandremove-button-wrapper span{

@@ -1,4 +1,5 @@
 /* Flight search for background */
+
 .hotel-section {
     width: 100%;
     background-image: url('../images/hotel-bg.png');
@@ -44,10 +45,11 @@
 
 
 .hotel-departure-container {
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 100%;
     gap: 10px;
+    margin-bottom: -20px;
 }
 
 .hotel-departure {
@@ -57,27 +59,34 @@
     padding-left: 10px;
     border-radius: 10px;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    
 }
 
 .hotel-departure-content {
     display: flex;
     flex-direction: column;
-    background-color: #FFF;
-    border-radius: 10px;
-    padding: 5px 10px;
     height: 100%;
+    padding: 10px;
+    border-radius: 10px;
     width: 100%;
+    background-color: #0d398428;
 }
 
+
 .hotel-departure-content label {
-    color: grey;
+    color: rgb(90, 90, 90);
     font-size: 12px;
+    padding-left: 10px;
 }
 
 
 .hotel-departure-content input {
     border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    
 }
 
 .hotel-departure-content input:focus {
@@ -91,6 +100,47 @@
 }
 
 
+.hotel-departure-content-Towhere{
+    display: inline-block;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #0d398428;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: -20px;
+}
+
+
+.hotel-departure-content-Towhere label {
+    color: rgb(90, 90, 90);
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+
+.hotel-departure-content-Towhere input {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 25px;
+    
+}
+
+.hotel-departure-content-Towhere input:focus {
+    outline: none;
+}
+
+
+/* .hotel-departure-content-Towhere input::placeholder {
+    font-weight: bold;
+    color: #000;
+} */
+
+
 
 .hotel-departure-content input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
@@ -102,6 +152,83 @@
     display: flex;
     gap: 20px;
 }
+
+
+
+
+
+
+
+
+/* number of passenger style =========================================================================================== */
+
+.hotel-book-pass-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #FF6805;
+}
+.hotel-booking-passanegers{
+    width: 23.5%;
+    display:none;
+    flex-direction: column;
+    align-self: flex-end;
+    background-color: white;
+    color: rgb(72, 72, 72);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 13px;  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    gap: 20px;
+    position: absolute;
+    top: 480px;
+    z-index: 2;
+    margin-right: 82px;
+}
+
+.passenger-content-wrapper{
+    display: flex; 
+    width: 100%; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.passenter-title{
+    display: flex; 
+    flex-direction: column;
+}
+
+
+/* flight class style */
+.flight-class-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 1px solid gray;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.flight-class-wrapper span{
+    color: gray;
+}
+
+
+.flight-class{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.flight-btn-wrapper{
+    width: 300px; display:none; gap: 20px; align-self: flex-end; justify-content: end;
+    border-radius: 10px;
+}
+
+
+
 
 
 @media (max-width:768px) {
@@ -140,4 +267,39 @@
         width: 100%;
     }
 
+
+
+
+    .hotel-book-pass-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        border-radius: 10px;
+    }
+    .hotel-booking-passanegers{
+        width: 100%;
+        display:none;
+        flex-direction: column;
+        align-self: flex-end;
+        background-color: white;
+        color: rgb(72, 72, 72);
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 13px;  
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        gap: 20px;
+        position: relative;
+        top: 0px;
+        z-index: 2;
+        margin-right: 0;
+    }
+
+
+}
+
+
+
+
+.hotelvisible{
+    display: flex;
 }

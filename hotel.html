@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+        <link rel = "stylesheet"  
+        href =  
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -100,48 +105,99 @@
                 <div class="hotel-search-container">
                     <form action="">
                         <!-- Depature and destination container -->
-                        <div class="hotel-departure-container my-3">
-                            <!-- To where? -->
-                            <div class="hotel-departure">
-                                <img src="images/departure.png" width="15" alt="" srcset="">
-                                <div class="hotel-departure-content">
-                                    <label>To where?</label>
-                                    <input type="text" placeholder="Saudi Arabia" />
-                                </div>
-                            </div>
-
-
-                            <!-- Departure Date -->
-                            <div class="hotel-departure">
-                                <img src="images/calendar.png" width="15" alt="" srcset="">
-                                <div class="hotel-departure-content">
-                                    <label for="depart">Depart</label>
-                                    <input type="date" id="depart" />
-                                </div>
-                            </div>
-
-                            <!-- Arrival Date -->
-                            <div class="hotel-departure">
-                                <img src="images/calendar.png" width="15" alt="" srcset="">
-                                <div class="hotel-departure-content">
-                                    <label for="return">Return</label>
-                                    <input type="date" />
-                                </div>
-                            </div>
-
-                            <div class="hotel-departure">
-                                <img src="images/people 1.png" width="15" alt="" srcset="">
-                                <div class="hotel-departure-content">
-                                    <label for="return">No of Passenger</label>
-                                    <input type="text" placeholder="5 Passengers" />
-                                </div>
-                            </div>
-
-                            <a href="hotel_search_result.html" class="btn" type="submit"><img src="images/search.png"
-                                    width="15" alt="" srcset="">
-                                Search</a>
+                        <!-- To where? -->
+                        <div id="hotel-check" class="hotel-departure-content-Towhere">
+                            <input type="text" placeholder="To where?" />
+                            <img src="./images/svg-icon/plane-take-off-svgrepo-com.svg" style="color: white; height:30px; width:30px;  position: absolute; right: 20px; top: 20px;" srcset="">
+                           
                         </div>
 
+
+                        <div id="check-in" class="hotel-departure-container my-3">
+                            <!-- Departure Date -->
+                                <div id="check-in-depart"  class="hotel-departure-content">
+                                    <label for="depart">Check-in</label>
+                                    <input type="date" id="depart" />
+                                </div>
+                            
+                            <!-- Arrival Date -->
+                                <div id="check-out" class="hotel-departure-content">
+                                    <label for="return">Check-out</label>
+                                    <input type="date" />
+                                </div>
+                            
+                                <div id="no-of-room"  class="hotel-departure-content">
+                                    <label for="return">No of Room</label>
+                                    <input type="text" placeholder="1 Room 1 Guest" />
+                                </div>
+                            
+                            <button class="btn" type="submit"><img src="images/search.png"
+                                    width="15" alt="" srcset="">
+                                Search</button>
+                        </div>
+                           
+                        
+                        <!-- number of passenger hotel booking wrapper -->
+                            
+                        <!-- passengers -->
+                        <div class="hotel-book-pass-wrapper">
+                        <div id="hotel-passengers" class="hotel-booking-passanegers">
+                            <span>Room</span>
+
+                            <!-- number of adults -->
+                            <div class="passenger-content-wrapper">
+                                <div class="passenter-title">
+                                    <strong>Adults</strong>
+                                    <span>12 Years and up</span>
+                                </div>
+                                <div class="addandremove-button-wrapper">
+                                    <button>-</button>
+                                    <span>1</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+
+                            
+                            <!-- number of children -->
+                            <div class="passenger-content-wrapper">
+                                <div class="passenter-title">
+                                    <strong>Children</strong>
+                                    <span>Ages 2-11</span>
+                                </div>
+                                <div class="addandremove-button-wrapper">
+                                    <button>-</button>
+                                    <span>0</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+
+                           
+                            <!-- Reason for travelling -->
+                            <div class="flight-class-wrapper">
+                                <span>What are you travelling for?</span>
+
+                            
+                            <!-- Business -->
+                            <div class="flight-class">
+                              <label for="guest"><strong>Business</strong></label>
+                                <input type="checkbox" name="guest" id="">
+                            </div>
+
+                            <!-- Leizure -->
+                            <div class="flight-class">
+                              <label for="guest"><strong>Leizure</strong></label>
+                                <input type="checkbox" name="guest" id="">
+                            </div>
+                            </div>
+
+                         
+                                <button class="btn" id="btn-continue" type="submit">
+                                    <span>Continue</span>
+                                </button>
+                           
+                        </div>  
+                        
+                        </div>
 
                     </form>
 
@@ -253,7 +309,7 @@
                             <b>Novotel Rotorua Hotel</b><br>
                             in New Zealand
                         </span>
-                        <p>"Started with stress, ended with joy. Thanks Agoda."</p>
+                        <p>"Started with stress, ended with joy. Thanks Manzo."</p>
                         <span> Michael from Australia</span>
                     </div>
                     <div class="testimonial-content">
@@ -261,7 +317,7 @@
                             <b>Novotel Rotorua Hotel</b><br>
                             in New Zealand
                         </span>
-                        <p>"Started with stress, ended with joy. Thanks Agoda."</p>
+                        <p>"Started with stress, ended with joy. Thanks Manzo."</p>
                         <span> Michael from Australia</span>
                     </div>
                     <div class="testimonial-content">
@@ -269,7 +325,7 @@
                             <b>Novotel Rotorua Hotel</b><br>
                             in New Zealand
                         </span>
-                        <p>"Started with stress, ended with joy. Thanks Agoda."</p>
+                        <p>"Started with stress, ended with joy. Thanks Manzo."</p>
                         <span> Michael from Australia</span>
                     </div>
                 </div>
@@ -473,7 +529,7 @@
 
 
 
-
+    <script src="./js/hotel.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -498,6 +554,43 @@
                 }
             }
         })
+
+
+        //Hotel Booking Js Code
+  const hotelhotelCheck =document.getElementById("hotel-check");
+  const hotelPassenger = document.getElementById("hotel-passengers");
+  const checkIn = document.getElementById("check-in"); 
+  
+  hotelhotelCheck.addEventListener("click", function(){
+      hotelhotelCheck.classList.add("bordered");
+      checkIn.style.display="flex";
+  });
+
+  const checkInDept = document.getElementById("check-in-depart");
+  const checkOut = document.getElementById("check-out")
+  const noOfRoom = document.getElementById("no-of-room")
+  
+
+  checkInDept.addEventListener("click", function () {
+      checkInDept.classList.add("bordered");
+  })
+  
+  checkOut.addEventListener("click", function () {
+      checkOut.classList.add("bordered");
+  })
+
+  noOfRoom.addEventListener("click", function () {
+      noOfRoom.classList.add("bordered");
+      hotelPassenger.classList.toggle("hotelvisible");
+  })
+  
+  const hotelBtnContinue = document.getElementById("btn-continue");
+  hotelBtnContinue.addEventListener('click', function(event){
+      event.preventDefault();
+      hotelPassenger.classList.toggle("hotelvisible");
+      
+  })
+
     </script>
 </body>
 </body>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manzo Travel</title>
+    <title>Manzo | Bookk Flights | Hotels | Trasfer</title>
     <link href="bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="css/owl-carousel/owl-carousel.min.css">
@@ -109,7 +109,7 @@
                     <form action="">
                         <!-- <div class="dropdown-row"> -->
                             <!-- flight type: round trip, One-way, Multicity -->
-                            <div class="flight-type-wrapper">
+                            <div id="flight-type-id" class="flight-type-wrapper">
                                 <span>
                                     <input type="checkbox" name="Round Trip" id="round-trip"> 
                                     <label for="round-trip">Round Trip</label>
@@ -118,43 +118,34 @@
                                     <input type="checkbox" name="One Way" id="one-way"> 
                                     <label for="round-trip">One Way</label>
                                 </span>
-                                <span>
-                                    <input type="checkbox" name="Multi-city" id="multi-city"> 
-                                    <label for="round-trip">Multi-city</label>
+                              <span> |<a href="">
+                                           Multi-city <i class="fa fa-angle-right" aria-hidden="true"></i>    </a> 
                                 </span>
 
                             </div>
                             <!-- flight input wrapper -->
                             <div class="flight-wrapper">
-                                <div class="flight-input-wrapper">
-                                    <input type="text" placeholder="From" />
-                                    <i class="fa fa-car fa-flight-iconstyle
-                                    "></i>
-                                </div>                                
-                                <span class="fa-flight-iconstyle2"><i class="fa fa-car "></i></span>
-                                <div class="flight-input-wrapper">
+                                <div id="flight-input-from" class="flight-input-wrapper">
+                                    <input id="from-input" type="text" placeholder="From" />
+                                    <img src="./images/svg-icon/plane-take-off-svgrepo-com.svg" style="color: white; height:30px; width:30px;  position: absolute; right: 20px; top: 40px;" srcset="">
+                                                    </div>    
+
+                                    <img src="./images/svg-icon/flight-return-round-svgrepo-com.svg" class="round-trip">
+                        
+                                <div id="flight-input-to" class="flight-input-wrapper">
                                     <input type="text" placeholder="To" />
-                                    <i class="fa fa-car fa-flight-iconstyle"></i>
+                                    <img src="./images/svg-icon/flight-landing-svgrepo-com.svg" style="color: white; height:30px; width:30px;  position: absolute; right: 20px; top: 40px;" srcset="">
                                 </div>
-                            <!-- </div> -->
-                            <!-- trip round -->
-                            <!-- <div class="btn-dropdown-container">
-                                <select class="btn-dropdown">
-                                    <option value="Lorem Ipsum">Round Trip</option>
-                                    <option value="Adipiscing">One-way</option>
-                                    <option value="Lorem Ipsum">Multi-city</option>
-                                </select>
-                            </div> -->
                         </div>
 
                           <!-- Depature and destination container -->
-                        <div class="flight-depart-wrapper">
-                            <div id="departing" class="flight-depat-wrap-content">
+                        <div id="flight-depart-id" class="flight-depart-wrapper">
+                            <div id="departing-id" class="flight-depat-wrap-content">
                                     <label for="depart">Departing</label>
                                     <input type="date" id="depart" />
                             </div>
 
-                            <div id="returning" class="flight-depat-wrap-content">
+                            <div id="returning-id" class="flight-depat-wrap-content">
                                 <label for="depart">Returning</label>
                                 <input type="date" id="depart" />
                             </div>
@@ -168,7 +159,7 @@
 
 
                         <!-- passengers -->
-                        <div id="passenger" onclick="toggleBorderStyle()" class="flight-depat-passanegers">
+                        <div id="passenger" class="flight-depat-passanegers">
                             <span>Passengers</span>
 
                             <!-- number of adults -->
@@ -247,13 +238,13 @@
                             </div>
 
                          
-                                <button class="btn" onclick="continueFunc()" type="submit">
+                                <button class="btn" id="btn-continue" type="submit">
                                     <span>Continue</span>
                                 </button>
                            
                         </div>     
 
-                      <div style="width: 300px; display:flex; gap: 20px; align-self: flex-end; justify-content: end;">
+                      <div class="flight-btn-wrapper">
                         <button  style=" font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold; display:flex; gap: 20px; justify-content: center; align-items: center;padding: 20px;"  class="btn" type="submit">
                             <span>Search Flights</span>
                         <i class="fa fa-search"></i>
