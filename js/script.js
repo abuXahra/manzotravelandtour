@@ -65,6 +65,7 @@ roundTrip.addEventListener("click", function () {
   roundTrip.style.height = "20px";
   roundTrip.style.width = "20px";
   roundTrip.style.background = "blue";
+  returning.style.display = "flex";
 });
 
 oneWay.addEventListener("click", function () {
@@ -73,4 +74,5 @@ oneWay.addEventListener("click", function () {
   oneWay.style.height = "20px";
   oneWay.style.width = "20px";
   oneWay.style.background = "blue";
+  returning.style.display = "none";
 });
