@@ -13,7 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-</head>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+        <link rel = "stylesheet"  
+        href =  
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
 
 <body>
     <!-- navbar section -->
@@ -103,65 +110,83 @@
 
                 <!-- Dropdown -->
                 <div class="transfer-search-container">
-
-                    <form action="">
-                        <!-- Depature and destination container -->
-                        <div class="transfer-departure-container my-3">
-                            <div class="transfer-from">
-                                <!-- From where? -->
-                                <div class="transfer-departure">
-                                    <img src="images/departure.png" width="15" alt="" srcset="">
-                                    <div class="transfer-departure-content">
-                                        <label>Pick-up Airport</label>
-                                        <input type="text" placeholder="Murtala Airport" />
-                                    </div>
-                                </div>
-                                <!-- To where? -->
-                                <div class="transfer-departure">
-                                    <img src="images/location 1.png" width="15" alt="" srcset="">
-                                    <div class="transfer-departure-content">
-                                        <label>Destination Location</label>
-                                        <input type="text" placeholder="Transcorp Hilton" />
-                                    </div>
-                                </div>
+                    <form action="" class="taxi-form">
+                        <div id="" class="flight-wrapper">
+                            <div id="hoteltowrapper" class="flight-input-wrapper">
+                                <input id="from-input" type="text" placeholder="From" />
+                          
+                                <!-- <img src="./images/svg-icon/plane-take-off-svgrepo-com.svg" class="takeOffIcon" srcset=""> -->
+                                <i class="fa fa-plane pickupIcon" aria-hidden="true"></i>
+                                   <label for="" class="pickuptoLabel">
+                                    Pick-Up (Airport)
+                                </label>               
+                            </div>   
+                    
+                            <div id="flight-input-to" class="flight-input-wrapper">
+                                <input type="text" placeholder="To" />
+                                <label for="" class="destinationLabel">
+                                    Destination (Hotel)
+                                </label> 
+                                <i class="fa fa-car pickupIcon" aria-hidden="true" ></i>  
+                            
                             </div>
-                            <!-- Departure Date -->
-                            <div class="transfer-from">
-                                <div class="transfer-departure">
-                                    <img src="images/calendar.png" width="15" alt="" srcset="">
-                                    <div class="transfer-departure-content">
-                                        <div class="pickup-date-time-wrapper">
-                                            <div class="pick-date">
-                                                <label for="depart">Depart</label>
-                                                <input type="date" id="depart" />
-                                            </div>
-
-                                            <div class="pickup-time-wrapper">
-                                                <img src="images/clock 1.png" width="15" alt="" srcset="">
-                                                <div class="pickup-time">
-                                                    <label for="depart">Time</label>
-                                                    <input type="text" id="depart" placeholder="12:00pm" />
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <!-- Arrival Date -->
-                                <div class="transfer-departure">
-                                    <img src="images/people 1.png" width="15" alt="" srcset="">
-                                    <div class="transfer-departure-content">
-                                        <label for="return">No of Passenger</label>
-                                        <input type="text" placeholder="5 Passengers" />
-                                    </div>
-                                </div>
-                                <button class="btn" type="submit"><img src="images/search.png" width="15" alt=""
+                    </div>
+                    <div id="depart-wrapper" style="display: none;" class="flight-wrapper">
+                        <div id="hotelto-date" class="flight-input-wrapper">
+                          <span class="departInputWrapper">
+                            <input  id="from-input" type="date" placeholder="From" /> | 
+                            <span>
+                                <input   id="from-input" type="text" placeholder="Time" />
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            </span>
+                        </span>  
+                              <label class="destinationLabel" for="" >
+                                Depart
+                            </label>               
+                        </div>   
+                        <div id="passenger-to" class="flight-input-wrapper">
+                            <input id="passengerNoValue" type="text" placeholder="To" value="1 passengers" />
+                            <label for="">
+                                No of Passenger
+                            </label>  
+                            <i class="fa fa-users pickupIcon" aria-hidden="true"></i> 
+                        </div>
+                        <div id="searc-btn" class="btn-wrapper">
+                            <button class="btn" style="padding: 20px;" type="submit"><img src="images/search.png" width="15" alt=""
                                         srcset="">
-                                    Search</button>
+                                    Search
+                            </button>
+                </div>
+                </div>
+                          
+                            <!-- number of passenger taxi booking wrapper -->
+                            
+                        <!-- passengers -->
+                        <div class="taxi-wrapper">
+                            <div id="taxi-passengers" class="taxi-passangers">
+                                <strong>PASSENGER</strong>
+                                <hr></hr>
+    
+                                <!-- number of adults -->
+                                <div class="taxi-passenger-wrapper" >
+                                    <div class="taxi-title">
+                                        <span>Passengers</span>
+                                    </div>
+                                    <div class="taxi-btn-wrapper">
+                                        <button id="passengerReduce">-</button>
+                                        <span id="passengerValue">1</span>
+                                        <button id="passengerAdd">+</button>
+                                    </div>
+                                </div>
+                                    <button class="btn" id="btn-continue" type="submit">
+                                        <span>Continue</span>
+                                    </button>
+                            </div>  
+                            
                             </div>
                         </div>
                     </form>
+                   
                 </div>
     </section>
 
@@ -572,6 +597,72 @@
                 }
             }
         })
+
+
+              
+  const hotelToAirport =document.getElementById("hoteltowrapper");
+  const hotelToDate = document.getElementById("hotelto-date");
+  const flightInputTo = document.getElementById("flight-input-to"); 
+  const departWrapper = document.getElementById("depart-wrapper"); 
+  const searchBtn = document.getElementById("searc-btn");
+  const taxiPassenger = document.getElementById("taxi-passengers");
+  const passengerTo = document.getElementById("passenger-to");
+  const btnCotinue = document.getElementById("btn-continue");
+
+  
+  hotelToAirport.addEventListener("click", function(){
+    hotelToAirport.classList.toggle("bordered");
+    departWrapper.classList.add("tovisible")
+      departWrapper.style.display = "flex";
+      searchBtn.style.display = "flex";
+  });
+
+
+  passengerTo.addEventListener("click", function(){
+    passengerTo.classList.toggle("bordered");
+    taxiPassenger.classList.toggle("tovisible")
+  });
+
+
+  flightInputTo.addEventListener("click", function(){
+    flightInputTo.classList.toggle("bordered");
+    departWrapper.style.display = "flex";
+  });
+
+  hotelToDate.addEventListener("click", function(){
+    hotelToDate.classList.toggle("bordered");
+  });
+
+
+  btnCotinue.addEventListener("click", function(event){
+    event.preventDefault();
+    taxiPassenger.classList.toggle("tovisible")
+  });
+
+
+  
+  const passengerValue = document.getElementById('passengerValue');
+    const passengerReduce = document.getElementById('passengerReduce');
+    const passengerAdd = document.getElementById('passengerAdd');
+    const passengerNoValue = document.getElementById('passengerNoValue')
+     
+    passengerReduce.addEventListener('click', (event) => {
+        event.preventDefault();
+        let value = parseInt(passengerValue.textContent);
+        if (value > 1) {
+            value--;
+            passengerValue.textContent = value;
+            passengerNoValue.value =value + " Passengers";
+        }
+    });
+
+    passengerAdd.addEventListener('click', (event) => {
+        event.preventDefault();
+        let value = parseInt(passengerValue.textContent);
+        value++;
+        passengerValue.textContent = value;
+        passengerNoValue.value =value + " Passengers";
+    });
     </script>
 </body>
 </body>

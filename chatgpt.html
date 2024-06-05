@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Booking Form</title>
+  </head>
+  <body>
+    <form id="flightBookingForm">
+      <div id="cityFields">
+        <div>
+          <label for="departureCity">Departure City:</label>
+          <select class="citySelect" name="departureCity"></select>
+          <label for="arrivalCity">Arrival City:</label>
+          <select class="citySelect" name="arrivalCity"></select>
+        </div>
+      </div>
+      <button type="button" id="addCityButton">Add Another City</button><br />
+      <label for="departureDate">Departure Date:</label>
+      <input type="date" id="departureDate" /><br />
+      <button type="submit">Book Flight</button>
+    </form>
+
+    <script>
+      const cities = [
+        { name: "New York", code: "NYC" },
+        { name: "Los Angeles", code: "LAX" },
+        { name: "Chicago", code: "ORD" },
+        // Add more cities as needed
+      ];
+
+      const cityFields = document.getElementById("cityFields");
+      const addCityButton = document.getElementById("addCityButton");
+
+      // Function to create a new set of city input fields
+      function createCityFields() {
+        const div = document.createElement("div");
+        const departureSelect = createCitySelect("departureCity");
+        const arrivalSelect = createCitySelect("arrivalCity");
+        div.appendChild(departureSelect);
+        div.appendChild(arrivalSelect);
+        cityFields.appendChild(div);
+      }
+
+      // Function to create a city select element
+      function createCitySelect(name) {
+        const select = document.createElement("select");
+        select.classList.add("citySelect");
+        select.name = name;
+        cities.forEach((city) => {
+          const option = document.createElement("option");
+          option.value = city.code;
+          option.textContent = city.name;
+          select.appendChild(option);
+        });
+        return select;
+      }
+
+      // Add initial city fields
+      createCityFields();
+
+      // Event listener for the "Add Another City" button
+      addCityButton.addEventListener("click", function () {
+        createCityFields();
+      });
+
+      // Form submission handler
+      document
+        .getElementById("flightBookingForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const citySelects = document.querySelectorAll(".citySelect");
+          const cities = Array.from(citySelects).map((select) => select.value);
+          const departureDate = document.getElementById("departureDate").value;
+          // Perform further actions like form validation and submission
+          console.log("Cities:", cities);
+          console.log("Departure Date:", departureDate);
+        });
+    </script>
+  </body>
+</html>

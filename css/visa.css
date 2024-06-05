@@ -49,40 +49,41 @@
 
 
 .visa-departure-container {
+    background-color: white;
     display: flex;
     justify-content: space-between;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.visa-departure-wrapper{
+    display: flex;
+    background-color: #0d398428;
+    width: 50%;
+    border-radius: 10px;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 25px;
 }
 
 .visa-departure {
-    display: flex;
-    background-color: #FF6805;
-    width: 50%;
-    padding-left: 10px;
-    border-radius: 10px;
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .visa-departure {
     text-decoration: none;
+    color: rgb(50, 50, 50);
 }
 
-.visa-departure-content {
-    display: flex;
-    flex-direction: column;
-    color: #000;
-    background-color: #FFF;
-    width: 100%;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    height: 100%;
-}
 
 
 /* ============media query */
@@ -98,7 +99,7 @@
         background-color: #0d3984dc;
         border-radius: 0px;
         height: auto;
-        padding: 20px
+        padding: 20px;
     }
 
     .visa-departure-container {
@@ -107,5 +108,10 @@
 
     .visa-departure {
         width: 100%;
+    }
+
+    .visa-departure-wrapper{
+        width: 100%;
+        font-size: 18px;
     }
 }

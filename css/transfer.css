@@ -9,16 +9,21 @@
     height: auto;
     border-radius: 0 0 0 50px;
     position: relative;
+ 
 }
 
 
 
+.fa-long-arrow-right{
+   color: gray;
+}
 
 .transfer-section-inner {
     width: 100%;
     height: 100%;
     background-color: #0d398482;
     border-radius: 0 0 0 50px;
+    padding: 40px;
 }
 
 /* b */
@@ -200,13 +205,159 @@
 }
 
 
-
+/* from hotel to airport css form */
 .fligt-dates {
     display: flex;
     gap: 10px;
 }
 
+.pickupIcon{
+    color: gray; height:30px; width:30px;  position: absolute; right: 20px; top: 40px;
+}
 
+.pickuptoLabel{
+    color: rgb(79, 79, 79); font-size: 12px; height:30px; width:auto;  position: absolute; left: 30px; top: 10px;
+}
+
+
+.destinationLabel{
+    color: rgb(79, 79, 79); font-size: 12px; height:30px; width:auto;  position: absolute; left: 30px; top: 10px;
+}
+
+
+.takeOffIcon{
+    color: white; height:30px; width:30px;  position: absolute; right: 20px; top: 40px;
+}
+
+
+.departInputWrapper{
+    width: 100%; align-items: center; color: gray; display: flex; gap: 10px;  border-radius: 10px;   background-color: #0d398428;
+}
+
+.departInputWrapper input{
+    width: 50%; background-color: transparent;
+}
+
+
+.departInputWrapper span{
+    width: 50%; position: relative; background-color: transparent
+}
+
+
+.departInputWrapper span input{
+    background-color: transparent;
+}
+
+.departInputWrapper span i{
+    color: grey; height:30px; width:30px;  position: absolute; right: 20px; top: 40px;
+}
+
+
+
+.flight-input-wrapper{
+
+}
+
+.taxi-form{
+    padding-bottom: 0px;
+}
+.flight-input-wrapper input{
+    font-weight: bold;
+}
+
+.flight-input-wrapper label{
+    color: rgb(79, 79, 79); font-size: 12px; height:30px; width:auto;  position: absolute; left: 30px; top: 10px;
+}
+
+
+
+
+
+
+/* number of passenger css */
+
+.taxi-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #FF6805;
+}
+.taxi-passangers{
+    width: 20%;
+    display:none;
+    flex-direction: column;
+    align-self: flex-end;
+    background-color: white;
+    color: rgb(72, 72, 72);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 13px;  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    gap: 20px;
+    position: absolute;
+    top: 430px;
+    z-index: 2;
+    margin-right: 287px;
+}
+
+.taxi-passenger-wrapper{
+    display: flex; 
+    width: 100%; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.taxi-title{
+    display: flex; 
+    flex-direction: column;
+}
+
+
+.taxi-btn-wrapper {display: flex; gap: 10px;align-items: center; height: 20px;
+}
+
+.taxi-btn-wrapper button{
+    font-size: 20px; padding: 0px 10px; border: none; background-color: #FF6805; color: white;
+    border-radius: 5px;
+}
+
+.taxi-btn-wrapper span{
+    border: #D4D4D4 1px solid;
+    border-radius: 5px;
+    width: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+.tobordered {
+    border: 2px solid #0D3984;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 0px 15px -3px #0D3984;
+}
+
+.tohidden {
+    display: none;
+}
+
+.tovisible {
+    display: flex;
+}
+
+
+.btn-wrapper{
+    width: 10%; display: none; justify-content: flex-end;
+}
+
+
+.btn-wrapper button{
+    width: 100%;
+}
 @media (max-width: 768px) {
 
 
@@ -215,13 +366,16 @@
         border-radius: 0px;
     }
 
+    .btn-wrapper{
+        width: 100%;
+    }
 
     .transfer-section-inner {
         border-radius: 0px;
     }
 
     .transfer-search-container {
-
+        
         border-radius: 0px;
 
     }
@@ -229,6 +383,7 @@
     .transfer-from {
         flex-direction: column;
         width: 100%;
+    
     }
 
     .transfer-departure {
@@ -239,5 +394,9 @@
     .pickup-time-wrapper {
         gap: 0px;
         padding-left: 2px;
+    }
+
+    .fa-long-arrow-right{
+        display: none!important;
     }
 }
