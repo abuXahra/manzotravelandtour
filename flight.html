@@ -151,10 +151,17 @@
                             <div  id="passegersAndClass" class="flight-depat-wrap-content">
                                 <span id="pass-class">Passenger and Class</span>
                                 <div class="passenger-wrapper">
-                                    <strong>1 Passenger and Guest Class</strong>
+                                    <strong><span id="passengerValue">1</span> passenger and <span id="classValue">Guest Class</span> </strong>
                                 </div>
                             </div>
+                            <div id="searc-btn" class="flight-btn-search">
+                                <button class="btn" style="padding: 20px;" type="submit"><img src="images/search.png" width="15" alt=""
+                                            srcset="">
+                                        Search
+                                </button>
+                            </div>
                         </div>
+
 
                        
                         <!-- passengers -->
@@ -167,10 +174,10 @@
                                     <strong>Adults</strong>
                                     <span>12 Years and up</span>
                                 </div>
-                                <div class="addandremove-button-wrapper">
-                                    <button>-</button>
-                                    <span>1</span>
-                                    <button>+</button>
+                                <div class="taxi-btn-wrapper">
+                                    <button id="adultReduceBtn">-</button>
+                                    <span id="adultValue">1</span>
+                                    <button id="adultAddBtn">+</button>
                                 </div>
                             </div>
 
@@ -181,10 +188,10 @@
                                     <strong>Children</strong>
                                     <span>Ages 2-11</span>
                                 </div>
-                                <div class="addandremove-button-wrapper">
-                                    <button>-</button>
-                                    <span>0</span>
-                                    <button>+</button>
+                                <div class="taxi-btn-wrapper">
+                                    <button id="childrenReduceBtn">-</button>
+                                    <span id="childrenValue">0</span>
+                                    <button id="childrenAddBtn">+</button>
                                 </div>
                             </div>
 
@@ -194,10 +201,10 @@
                                     <strong>Infants</strong>
                                     <span>Below 2 years</span>
                                 </div>
-                                <div class="addandremove-button-wrapper">
-                                    <button>-</button>
-                                    <span>0</span>
-                                    <button>+</button>
+                                <div class="taxi-btn-wrapper">
+                                    <button id="infantReduceBtn">-</button>
+                                    <span id="infantValue">0</span>
+                                    <button id="infantAddBtn">+</button>
                                 </div>
                             </div>
 
@@ -207,32 +214,31 @@
                                     <strong>Infant on seat</strong>
                                     <span>Below 2 years</span>
                                 </div>
-                                <div class="addandremove-button-wrapper">
-                                    <button>-</button>
-                                    <span>0</span>
-                                    <button>+</button>
+                                <div class="taxi-btn-wrapper">
+                                    <button id="infantonSeatReduceBtn">-</button>
+                                    <span id="infantonSeatValue">0</span>
+                                    <button id="infantonSeatAddBtn">+</button>
                                 </div>
                             </div>
 
                             <div class="flight-class-wrapper">
                                 <span>Class</span>
-
                                 <!-- Guest -->
                             <div class="flight-class">
                               <label for="guest"><strong>Guest</strong></label>
-                                <input type="checkbox" name="guest" id="">
+                                <input type="radio" name="guest" id="guestClass" checked style="width:20px; height: 20px; background-color: blue;">
                             </div>
-
+                    
                             <!-- Business -->
                             <div class="flight-class">
                               <label for="guest"><strong>Business</strong></label>
-                                <input type="checkbox" name="guest" id="">
+                                <input type="radio" name="guest" id="businessClass" style="width:20px; height: 20px; background-color: blue;">
                             </div>
 
                             <!-- First class -->
                             <div class="flight-class">
                               <label for="guest"><strong>First Class</strong></label>
-                                <input type="checkbox" name="guest" id="">
+                                <input type="radio" name="guest" id="firstClass" style="width:20px; height: 20px; background-color: blue;">
                             </div>
                             </div>
 

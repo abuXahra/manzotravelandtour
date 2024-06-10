@@ -295,9 +295,10 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     gap: 20px;
     position: absolute;
-    top: 430px;
+    top: 520px;
     z-index: 2;
-    margin-right: 287px;
+    right: 423px;
+    /* margin-right: 287px; */
 }
 
 .taxi-passenger-wrapper{
@@ -318,7 +319,7 @@
 
 .taxi-btn-wrapper button{
     font-size: 20px; padding: 0px 10px; border: none; background-color: #FF6805; color: white;
-    border-radius: 5px;
+    border-radius: 5px; display: flex;
 }
 
 .taxi-btn-wrapper span{
@@ -351,7 +352,7 @@
 
 
 .btn-wrapper{
-    width: 10%; display: none; justify-content: flex-end;
+    width: 10%; display: flex; justify-content: flex-end;
 }
 
 
@@ -399,4 +400,21 @@
     .fa-long-arrow-right{
         display: none!important;
     }
+
+
+
+    .taxi-passangers{
+        width: 100% !important;
+        display:flex;
+        flex-direction: column;
+        align-self: center;
+        background-color: white ;
+        border-radius: 0px!important;
+        color: rgb(72, 72, 72);
+        position: relative !important;
+        top: 0px !important;
+        z-index: none !important;
+        box-shadow: none !important;
+        right: 0px!important;
+}
 }

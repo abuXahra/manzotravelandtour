@@ -315,12 +315,46 @@ border-radius: 10px;
 }
 
 
+.flight-btn-search{
+    width: 200px; 
+    display: flex; 
+    justify-content: flex-start;
+}
 
+.taxi-btn-wrapper {display: flex; gap: 10px;align-items: center; height: 20px;
+}
+
+.taxi-btn-wrapper button{
+    font-size: 20px; padding: 0px 10px; border: none; background-color: #FF6805; color: white;
+    border-radius: 5px;
+}
+
+.taxi-btn-wrapper span{
+    border: #D4D4D4 1px solid;
+    border-radius: 5px;
+    width: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* ========================================================== */
 
 @media (max-width:786px) {
+
+    .flight-btn-search{
+        width: 100%; 
+        display: flex; 
+        justify-content: start;
+    }
+
+
+ .flight-btn-search button{
+    width: 100%;
+ }
+
     .flight-wrapper{
         flex-direction: column;
         width: 100%;
@@ -374,7 +408,8 @@ border-radius: 10px;
     top: 0px !important;
     z-index: none !important;
     box-shadow: none !important;
-    z-index: 2;
+    right: 20px!important;
+    
 }
 .flight-type-wrapper{
     display: flex;
@@ -398,7 +433,7 @@ border-radius: 10px;
 
 
 .flight-depat-wrap-content{
-    width: 33%;
+    width: 36%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -449,6 +484,7 @@ border-radius: 10px;
     gap: 20px;
     position: absolute;
     top: 490px;
+    right: 245px;
     z-index: 2;
     /* top:490px; */
 }

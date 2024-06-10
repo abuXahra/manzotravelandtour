@@ -128,7 +128,8 @@
                             
                                 <div id="no-of-room"  class="hotel-departure-content">
                                     <label for="return">No of Room</label>
-                                    <input type="text" placeholder="1 Room 1 Guest" />
+                                    <p style="color: black; padding-top: 5px; padding-left: 5px;"><strong> <span id="roomNumber">1</span> Room <span id="guestNumber">1 </span> Guest<span id="travelReason"></span></strong></p>
+                                    <!-- <input type="text" placeholder="1 Room 1 Guest" /> -->
                                 </div>
                             
                             <button class="btn" type="submit"><img src="images/search.png"
@@ -151,9 +152,9 @@
                                     <span>12 Years and up</span>
                                 </div>
                                 <div class="addandremove-button-wrapper">
-                                    <button>-</button>
-                                    <span>1</span>
-                                    <button>+</button>
+                                    <button id="adultReduceBtn">-</button>
+                                    <span id="adultValue">1</span>
+                                    <button id="adultAddBtn">+</button>
                                 </div>
                             </div>
 
@@ -165,12 +166,24 @@
                                     <span>Ages 2-11</span>
                                 </div>
                                 <div class="addandremove-button-wrapper">
-                                    <button>-</button>
-                                    <span>0</span>
-                                    <button>+</button>
+                                    <button id="childrenReduceBtn">-</button>
+                                    <span id="childrenValue">0</span>
+                                    <button id="childrenAddBtn">+</button>
                                 </div>
                             </div>
 
+
+                                <!-- number of children -->
+                                <div class="passenger-content-wrapper">
+                                    <div class="passenter-title">
+                                        <strong>Room</strong>
+                                    </div>
+                                    <div class="addandremove-button-wrapper">
+                                        <button id="roomReduceBtn">-</button>
+                                        <span id="roomValue">1</span>
+                                        <button id="roomAddBtn">+</button>
+                                    </div>
+                                </div>
                            
                             <!-- Reason for travelling -->
                             <div class="flight-class-wrapper">
@@ -180,13 +193,13 @@
                             <!-- Business -->
                             <div class="flight-class">
                               <label for="guest"><strong>Business</strong></label>
-                                <input type="checkbox" name="guest" id="">
+                                <input type="radio" name="Business" id="business" style="width:20px; height: 20px; background-color: blue;">
                             </div>
-
+          
                             <!-- Leizure -->
                             <div class="flight-class">
                               <label for="guest"><strong>Leizure</strong></label>
-                                <input type="checkbox" name="guest" id="">
+                              <input type="radio" name="leizureClass" id="leizureClass" style="width:20px; height: 20px; background-color: blue;">
                             </div>
                             </div>
 
@@ -590,6 +603,115 @@
       hotelPassenger.classList.toggle("hotelvisible");
       
   })
+
+
+
+
+//   for number of passenger in the hotel
+
+
+
+
+// Get references to all relevant elements
+const adultValueElement = document.getElementById("adultValue");
+const childrenValueElement = document.getElementById("childrenValue");
+const passengerValueElement = document.getElementById("guestNumber");
+
+const roomNumber = document.getElementById("roomNumber");
+const travelReason = document.getElementById("travelReason");
+
+
+// Function to update passenger count
+function updatePassengerCount() {
+  const adultCount = parseInt(adultValueElement.textContent);
+  const childrenCount = parseInt(childrenValueElement.textContent);
+  const totalPassengers =
+    adultCount + childrenCount;
+  passengerValueElement.textContent = totalPassengers;
+}
+
+// Add event listeners to each button to update passenger count when clicked
+document
+  .getElementById("adultAddBtn")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    adultValueElement.textContent = parseInt(adultValueElement.textContent) + 1;
+    updatePassengerCount();
+  });
+
+document
+  .getElementById("adultReduceBtn")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    if (parseInt(adultValueElement.textContent) > 0) {
+      adultValueElement.textContent =
+        parseInt(adultValueElement.textContent) - 1;
+      updatePassengerCount();
+    }
+  });
+
+
+
+document
+  .getElementById("childrenAddBtn")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    childrenValueElement.textContent = parseInt(childrenValueElement.textContent) + 1;
+    updatePassengerCount();
+  });
+
+document
+  .getElementById("childrenReduceBtn")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    if (parseInt(childrenValueElement.textContent) > 0) {
+        childrenValueElement.textContent =
+        parseInt(childrenValueElement.textContent) - 1;
+      updatePassengerCount();
+    }
+  });
+
+// number of rooms
+  const roomValue = document.getElementById("roomValue");
+
+
+  document
+  .getElementById("roomReduceBtn").addEventListener('click', (event) => {
+        event.preventDefault();
+        let value = parseInt(roomValue.textContent);
+        if (value > 1) {
+            value--;
+            roomValue.textContent = value;
+            roomNumber.textContent =value;
+        }
+    });
+
+    document
+  .getElementById("roomAddBtn").addEventListener('click', (event) => {
+        event.preventDefault();
+        let value = parseInt(roomValue.textContent);
+        value++;
+        roomValue.textContent = value;
+        roomNumber.textContent =value;
+    });
+
+
+const business = document.getElementById("business");
+const leizureClass = document.getElementById("leizureClass");
+travelReason
+
+business.addEventListener("click", function () {
+    business.checked = true;
+    leizureClass.checked = false;
+    travelReason.textContent = ", for Business";
+});
+
+leizureClass.addEventListener("click", function () {
+    leizureClass.checked = true;
+    business.checked = false;
+    travelReason.textContent = ", for Leizure";
+});
+
 
     </script>
 </body>
