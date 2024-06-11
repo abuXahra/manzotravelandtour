@@ -73,12 +73,13 @@ h3 {
 /* Flight search for background */
 .fligt-section {
     width: 100%;
-    /* background-color: #0D3984; */
+    background-color: #0d39844a;
     background-image: url('../images/travel.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: auto;
-    border-radius: 0 0 0 50px;
+    border-radius: 0 0 0 0;
     position: relative;
 }
 
@@ -215,9 +216,12 @@ font-size: 50px
 
 .flight-section-inner {
     width: 100%;
-    height: 100%;
     background-color: #0d398482;
     border-radius: 0 0 0 50px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* b */

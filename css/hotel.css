@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
-    border-radius: 0 0 0 50px;
+    border-radius: 0 0 0 0px;
     position: relative;
 }
 
@@ -14,7 +14,11 @@
     width: 100%;
     height: 100%;
     background-color: #0d398482;
-    border-radius: 0 0 0 50px;
+    border-radius: 0 0 0 0;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
 }
 
 /* b */
