@@ -1,16 +1,18 @@
 .sign-section {
     background-color: #0d398463;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .sign-wraper {
     width: 100%;
     height: auto;
-    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .sign-content {
@@ -19,13 +21,23 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 40%;
-    padding: 50px 30px;
+    width: 100%;
+    padding: 0px 30px;
     font-size: 15px;
     gap: 10px;
     border-radius: 10px;
 }
 
+.form{
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    border-radius: 10px;
+    box-shadow:none ;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+}
 .sign-fields {
     width: 100%;
     display: flex;
@@ -84,10 +96,23 @@
     width: 100%;
     gap: 10px
 }
+.sign-name div{
+    width: 50%;
+} 
 
+.sign-name div input{
+    width: 100%;
+} 
 @media (max-width:768px) {
     .sign-content {
         width: 95%;
     }
 
+    .form{
+        width: 80%;
+    }
+
+    .sign-chekbox{
+        flex-direction: column;
+    }
 }
