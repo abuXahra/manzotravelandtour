@@ -120,7 +120,7 @@ h3 {
 .about-section{
     width: 100%;
     height: auto;
-    margin-top: -100px;
+ 
 }
 
 .about-section-inner{
@@ -132,6 +132,7 @@ h3 {
 }
 
 .about-section-form {
+    margin-top: -100px;
     width: 50%;
     height: auto;
     display: flex;
@@ -195,7 +196,7 @@ form{
     flex-direction: column;
     justify-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+   
 }
 
 .about-section-content h1{
@@ -1154,12 +1155,12 @@ border-radius: 10px;
 
     .about-section-form{
         width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
         
     }
 
     .about-section-content{
-        
-        margin-top: 20px;
         width: 100%;
         padding: 5px;
     
